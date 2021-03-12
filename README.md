@@ -1,2 +1,2 @@
-# Layout_WebDevelopmentProject
+# WebDevelopmentProject
 Layout called "Web Development Project"
