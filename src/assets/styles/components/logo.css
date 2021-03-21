@@ -1,0 +1,17 @@
+.logo {
+    @mixin wh 60px, 60px;
+
+    transition: all $t-normal linear;
+
+    &__img {
+        @mixin wh 100%, 100%;
+
+        display: block;
+
+        object-fit: contain;
+    }
+
+    &:hover {
+        opacity: .5;
+    }
+}

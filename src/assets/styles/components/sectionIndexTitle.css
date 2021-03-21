@@ -7,11 +7,48 @@
 
     &__title {
         font-size: $mega-large;
+        font-weight: 600;
+        letter-spacing: .3rem;
     }
 
     &__subtitle {
         font-size: $medium;
+        letter-spacing: .1rem;
     }
 
-    &__arrow {}
+    &__btns {
+        margin-top: 100px;
+        
+        @media (max-width: $mobile-point) {
+            & * {
+                margin: {
+                    right: 0 !important;
+                    bottom: 25px;
+                }
+                width: 100%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            } 
+        }
+    }
+
+    &__arrow {
+        @mixin wh 50px, 50px;
+
+        position: relative;
+        top: 100px;
+
+        border: none;
+
+        background: center/contain no-repeat url('../image/right-arrow.svg');
+
+        transform: rotate(90deg);
+        transition: all $t-normal linear;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
 }

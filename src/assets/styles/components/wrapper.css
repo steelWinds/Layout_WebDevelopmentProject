@@ -3,11 +3,12 @@
 
     max-width: $m-size;
     margin: auto;
+    padding: 0 $p-normal;
 
     &_header {
         @mixin flex-box row, space-between, center;
 
-        padding: $p-45 $p-normal;
+        padding: $p-35 $p-normal;
 
         font-family: 'Open Sans';
 

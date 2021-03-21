@@ -18,6 +18,7 @@ $mega-large: 3.6rem;
 
 $pre-black: #212121;
 $white: #ffffff;
+$dark-green: #00897b;
 
 
 /* Z-index */
@@ -29,4 +30,8 @@ $z-over: 1000;
 
 $m-normal: 15px;
 $p-normal: 15px;
-$p-45: 45px;
+$p-35: 35px;
+
+/* Animation and Transition */
+
+$t-normal: .25s;

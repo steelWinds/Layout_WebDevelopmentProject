@@ -18,8 +18,18 @@
     }
 
     &__logo {
+        @mixin wh 50px, 50px;
+
         font-weight: bold;
         font-size: $medium;
+
+        & img {
+            @mixin wh 100%, 100%;
+
+            display: block;
+
+            object-fit: contain;
+        }
     }
 
     &__nav {
@@ -27,12 +37,17 @@
 
         text-transform: capitalize;
         font-weight: 600;
+        white-space: nowrap;
+        word-break: none;
+
+        overflow: hidden;
 
         @media (max-width: $mobile-point) {
             flex-direction: column;
             margin: {
                 top: $m-normal;
             }
+            height: 0;
         }
     }
 

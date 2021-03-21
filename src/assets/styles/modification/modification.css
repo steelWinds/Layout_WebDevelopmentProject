@@ -6,9 +6,22 @@
 
 .flexCenter {
     @mixin flex-box row, center, center;
+
+    @media (max-width: $mobile-point) {
+        flex-direction: column;
+    }
 }
+
+
 /* Backgrounds */
 
 .headerBackground {
     background: center/cover no-repeat url('../image/header_background.png');
+}
+
+
+/* Margins */
+
+.mr-25 {
+    margin-right: 25px;
 }

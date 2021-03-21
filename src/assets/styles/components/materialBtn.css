@@ -1,0 +1,32 @@
+.materialBtn {
+    display: inline-block;
+    padding: 20px 45px;
+
+    background-color: transparent;
+    font: bold 1rem 'Roboto';
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    white-space: nowrap;
+    word-break: none;
+
+    transition: all $t-normal linear;
+
+    &_styleOne {
+        border: 3px solid $white;
+
+        &:hover {
+            background-color: white;
+            color: $pre-black; 
+        }
+    }
+
+    &_styleSecond {
+        border: 3px solid $dark-green;
+        background-color: $dark-green;
+
+        &:hover {
+            background-color: transparent;
+            color: $dark-green;
+        }
+    }
+}

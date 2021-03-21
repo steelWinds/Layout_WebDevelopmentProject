@@ -9,10 +9,13 @@
 /* Fonts */
 
 @import '../fonts/OpenSans/openSansFont';
+@import '../fonts/Roboto/robotoFont';
 
 
 /* Components */
 
+@import './components/logo';
+@import './components/materialBtn';
 @import './components/sectionIndexTitle';
 @import './components/header';
 @import './components/container';
