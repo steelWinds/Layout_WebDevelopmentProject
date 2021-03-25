@@ -1,11 +1,12 @@
 .borderBtn {
     position: relative;
 
-    padding: 10px 30px;
+    padding: 15px 35px;
     border: 2px solid $dark-green;
 
     background-color: transparent;
     text-transform: uppercase;
+    font-weight: 600;
 
     color: $pre-black;
 

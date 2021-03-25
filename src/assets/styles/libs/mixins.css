@@ -3,8 +3,8 @@
     height: $h;
 }
 
-@define-mixin pos-0 {
-    position: absolute;
+@define-mixin pos-0 $pos: absolute {
+    position: $pos;
     top: 0;
     left: 0;
 }

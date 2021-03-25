@@ -1,5 +1,5 @@
 .header {
-    @mixin pos-0;
+    @mixin pos-0 fixed;
     @mixin wh 100%, auto;
 
     background-color: $white;
@@ -17,21 +17,6 @@
         }
     }
 
-    &__logo {
-        @mixin wh 50px, 50px;
-
-        font-weight: bold;
-        font-size: $medium;
-
-        & img {
-            @mixin wh 100%, 100%;
-
-            display: block;
-
-            object-fit: contain;
-        }
-    }
-
     &__nav {
         @mixin flex-box row center center;
 
@@ -39,14 +24,11 @@
         font-weight: 600;
         white-space: nowrap;
         word-break: none;
-
+        
         overflow: hidden;
 
         @media (max-width: $mobile-point) {
             flex-direction: column;
-            margin: {
-                top: $m-normal;
-            }
             height: 0;
         }
     }
@@ -77,5 +59,23 @@
         }
     }
 
+    &__wrapper {
+        @mixin flex-box row, space-between, center;
+        @mixin wh 100%, auto;
+
+        max-width: $m-size;
+        padding: $p-15 $p-normal;
+        margin: auto;
+
+        font-family: 'Open Sans';
+
+        @media (max-width: $mobile-point) {
+            flex-direction: column;
+            padding: {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
     
 }

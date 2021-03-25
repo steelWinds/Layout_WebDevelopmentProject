@@ -1,0 +1,24 @@
+.arrowSlideDown {
+    @mixin wh 50px, 50px;
+
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+
+    border: none;
+
+    background: center/contain no-repeat url('../image/right-arrow.svg');
+
+    transform: rotate(90deg);
+    transform-origin: left;
+    transition: all $t-normal linear;
+
+    &:hover {
+        opacity: .5;
+    }
+
+    &:active {
+        transform: translateY(10px) rotate(90deg);
+    }
+}
