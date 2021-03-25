@@ -50,4 +50,25 @@
             justify-content: center;
         }
     }
+
+    &_style3 {
+        grid-template: repeat(2, minmax(370px, 1fr)) / repeat(3, minmax(250px, 1fr));
+        grid-auto-rows: minmax(370px, 1fr);
+        margin: {
+            top: 30px; 
+            left: 30px;
+        };
+
+        & > * {
+            margin: {
+                bottom: 30px;
+                right: 30px;
+            };
+        }
+
+        @media (max-width: $mobile-point) {
+            grid-template-columns: minmax(250px, 370px);
+            justify-content: center;
+        }
+    }
 }

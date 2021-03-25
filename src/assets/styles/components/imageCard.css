@@ -1,0 +1,81 @@
+.imageCard {
+    @minmax flex-box column, center, center;
+
+    position: relative;
+
+    padding-top: 100%;
+
+    &:before {
+        @mixin pos-0;
+        @mixin wh 100%, 100%;
+
+        content: "";
+
+        transition: all $t-normal linear;
+        z-index: $z-medium;
+    }
+
+    &:hover:before {
+        background-color: rgba(33, 33, 33, 0.8);
+    }
+
+    &:hover &__title {
+        animation: slideDown $t-normal linear forwards;
+    }
+
+    &:hover &__subtitle {
+        animation: slideUp $t-normal linear .3s forwards;
+    }
+
+    &__wrapper {
+        @mixin pos-0;
+    }
+
+    &__img {
+        @mixin wh 100%, 100%;
+        @mixin flex-box column, center, center;
+
+        & > img {
+            @mixin wh 100%, 100%;
+
+            display: block; 
+
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        position: absolute;
+
+        color: $white;
+        text-align: center;
+
+        z-index: $z-medium;
+    }
+
+    &__title, &__subtitle {
+        opacity: 0;
+        font-weight: 600;
+    }
+
+    &__title {
+        margin-bottom: 5px;
+
+        text-transform: capitalize;
+        letter-spacing: $lSpace-medium;
+    }
+
+    @media (max-width: $mobile-point) {
+        &__title {
+            animation: slideDown $t-normal linear forwards;
+        }
+    
+        &__subtitle {
+            animation: slideUp $t-normal linear forwards;
+        }
+
+        &:before {
+            background-color: rgba(33, 33, 33, 0.8);
+        }
+    }
+}

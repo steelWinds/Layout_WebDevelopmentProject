@@ -1,0 +1,39 @@
+.borderBtn {
+    position: relative;
+
+    padding: 10px 30px;
+    border: 2px solid $dark-green;
+
+    background-color: transparent;
+    text-transform: uppercase;
+
+    color: $pre-black;
+
+    transition: all $t-normal linear;
+
+    &:before {
+        @mixin wh 100%, 0;
+
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: auto; 
+        bottom: 0;
+
+        background-color: $dark-green;
+
+        transition: all $t-normal linear;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: $white;
+
+        &:before {
+            top: 0;
+
+            height: 100%;
+        }
+    }
+}

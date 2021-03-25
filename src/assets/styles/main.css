@@ -4,6 +4,7 @@
 @import './libs/variables';
 @import 'normalize.css';
 @import './libs/myNormalize';
+@import './libs/animations.css';
 
 
 /* Fonts */
@@ -14,6 +15,9 @@
 
 /* Components */
 
+@import './components/borderBtn';
+@import './components/viewList';
+@import './components/imageCard';
 @import './components/materialCard';
 @import './components/sectionTitle';
 @import './components/grid';

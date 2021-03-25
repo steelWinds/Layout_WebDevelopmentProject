@@ -1,0 +1,22 @@
+.viewList {
+    @mixin flex-box column, center, center;
+    @mixin wh 100%, auto;
+
+    font-family: 'Open Sans', sans-serif;
+
+    &__menu {
+        @mixin flex-box row, center, center;
+        flex-wrap: wrap;
+        margin: {
+            top: 10px;
+            left: 10px;
+        };
+
+        & > button {
+            margin: {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    }
+}
