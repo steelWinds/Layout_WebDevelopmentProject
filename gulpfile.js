@@ -12,7 +12,6 @@ import uglify from 'gulp-uglify';
 import babel from 'gulp-babel';
 import imageMin from 'gulp-image';
 import del from 'del';
-import bSync from 'browser-sync';
 
 const postcssPlugins = [
     postcssImport(),
@@ -36,7 +35,6 @@ function cssTask() {
     return gulp.src(PATHS.styles)
            .pipe(postcss(postcssPlugins))
            .pipe(gulp.dest('./dist/styles'))
-           .pipe(bSync.stream())
 }
 
 function jsTask() {
@@ -75,14 +73,6 @@ async function cleanBuild() {
     let delPaths = await del('./dist'); 
 
     return delPaths;
-}
-
-async function serve() {
-    await bSync.create().init({
-        server: "./dist/templates"
-    })
-
-    return true;
 }
 
 export default gulp.series(
