@@ -1,16 +1,11 @@
 # WebDevelopmentProject
 
-## Description
-It's my layout for the website:)
+This is layout for development company
 
+## LICENSE
 
-## How to make changes this project?
-  1. Clone the project: `git clone`
-  2. Download the project dependencies via package.json: `npm i`;
-  3. Download gulp-cli for run tasks: `npm i -g gulp-cli`
-  4. Run gulp tasks: `gulp`
-  5. Make yours changes, have a nice day! 
+This project is licensed under the GNU GPL v3, see LICENSE.md file for more information
 
+## Authors
 
-## LICENSE 
-**See license in LICENSE.md file**
+- [Kirill](https://github.com/steelWinds)
