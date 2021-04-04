@@ -75,7 +75,7 @@ async function cleanBuild() {
     return delPaths;
 }
 
-export default gulp.series(
+export default  gulp.series(
     cleanBuild,
     gulp.parallel(
         cssTask, 

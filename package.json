@@ -2,6 +2,14 @@
   "private": true,
   "type": "module",
   "version": "0.0.1",
+  "scripts": {
+    "devBuild": "webpack --config=webpack.config.js --mode=development | gulp gulpBuild",
+    "prodBuild": "webpack --config=webpack.config.js --mode=production | gulp gulpBuild",
+    "webpack": "webpack --config=webpack.config.js --mode=development --watch",
+    "gulp": "gulp gulpWatch",
+    "lint:prettier-check": "prettier --check */**",
+    "lint:prettier-fix": "prettier --write */**"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
@@ -29,9 +37,9 @@
     "precss": "^4.0.0",
     "sugarss": "^3.0.3"
   },
-  "scripts": {},
   "dependencies": {
     "anime": "^0.1.2",
+    "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
   }
 }
