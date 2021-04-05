@@ -6,8 +6,12 @@
 
     z-index: $z-over;
 
+    @media (max-width: $mobile-point) {
+        position: sticky;
+    }
+
     &__menuBtn {
-        @mixin wh 55px, 55px;
+        @mixin wh 45px, 45px;
 
         position: relative;
 
@@ -20,19 +24,19 @@
         }
 
         &:focus:after {
-            top: 25px;
+            top: 21.5px;
             left: 50%;
             transform: translateX(-50%) rotate(45deg);
         }
 
         &:focus:before {
-            bottom: 25px;
+            bottom: 19px;
             left: 50%;
             transform: translateX(-50%) rotate(-45deg);
         }
 
         &:after, &:before {
-            @mixin wh 80%, 5px;
+            @mixin wh 70%, 5px;
 
             content: "";
 
@@ -46,11 +50,11 @@
         }
 
         &:after {
-            top: 15px;
+            top: 12px;
         }
 
         &:before {
-            bottom: 15px;   
+            bottom: 12px;  
         }
     }
 
@@ -76,7 +80,7 @@
 
         @media (max-width: $mobile-point) {
             position: absolute;
-            top: 90px;
+            top: 80px;
 
             width: 100%;
             flex-direction: column;

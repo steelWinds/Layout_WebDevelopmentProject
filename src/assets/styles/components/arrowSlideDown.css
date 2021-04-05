@@ -15,7 +15,15 @@
     transition: all $t-normal linear;
 
     @media (max-width: $mobile-point) {
-        bottom: 40px
+        bottom: 20px;
+    }
+
+    @media (max-width: 420px) {
+        position: static;
+
+        margin-top: 60px;
+
+        transform-origin: center;
     }
 
     &:hover {

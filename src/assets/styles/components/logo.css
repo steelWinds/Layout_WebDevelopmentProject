@@ -3,6 +3,11 @@
 
     transition: all $t-normal linear;
 
+    @media (max-width: $mobile-point) {
+        width: 50px;
+        height: 50px;
+    }
+
     &__img {
         @mixin wh 100%, 100%;
 
