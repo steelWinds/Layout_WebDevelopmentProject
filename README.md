@@ -1,6 +1,6 @@
 # WebDevelopmentProject
 
-This is layout for development company. if you want see her, go to [link](https://portfoliowdp.space)
+This is layout for development company. If you want see her, go to [link](https://portfoliowdp.space)
 
 ## LICENSE
 
